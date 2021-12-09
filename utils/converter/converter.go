@@ -41,3 +41,13 @@ func StringToIntSlice(data string, delimiter string) []int {
 
 	return intSlice
 }
+
+func ToSingularIntSlice(data []string) (intSlice []int) {
+	for _, line := range data {
+		for _, value := range line {
+			intSlice = append(intSlice, int(value))
+		}
+	}
+
+	return
+}

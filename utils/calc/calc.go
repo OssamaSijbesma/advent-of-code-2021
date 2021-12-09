@@ -1,5 +1,13 @@
 package calc
 
+func Sum(data []int) (sum int) {
+	for _, v := range data {
+		sum += v
+	}
+
+	return
+}
+
 func Max(data []int) (max int) {
 	for i, v := range data {
 		if i == 0 || v > max {
